@@ -19,12 +19,17 @@
 
 ## Installation
 
-0) Download QuigeonPaste
-0) Copy `conf/local.conf.php.dist` into `conf/local.conf.php`
-0) Edit `conf/local.conf.php` to personalize settings
-0) Ensure the `data/` directory is writable by your webserver
-0) Change the @include of `quigeonpaste_clientsideencryption.user.js`
-0) Enjoy!
+1) Download QuigeonPaste
+
+2) Copy `conf/local.conf.php.dist` into `conf/local.conf.php`
+
+3) Edit `conf/local.conf.php` to personalize settings
+
+4) Ensure the `data/` directory is writable by your webserver
+
+5) Change the @include of `quigeonpaste_clientsideencryption.user.js`
+
+6) Enjoy!
 
 To enable paste encryption, each client must install
 [GreaseMonkey](https://addons.mozilla.org/fr/firefox/addon/greasemonkey/)
