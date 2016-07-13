@@ -25,7 +25,7 @@
 
 3) Edit `conf/local.conf.php` to personalize settings
 
-4) Ensure the `data/` directory is writable by your webserver
+4) Ensure the `data/` directory is writable by your webserver or change the storage backend to sqlite
 
 5) Change the @include of `quigeonpaste_clientsideencryption.user.js`
 
@@ -51,7 +51,7 @@ Each backend type commes with a default backend:
 - storage: the plain backend stores the pastes in files on the filesystem
 - tpl: the default template backend defines what you see on the screen
 
-Each backend has a ``backends/<backend type>/<backend name>/conf.php` file that
+Each backend has a `backends/<backend type>/<backend name>/conf.php` file that
 can be configured through the `conf/local.conf.php` configuration file.
 
 ## Notes on the GreaseMonkey encryption script
