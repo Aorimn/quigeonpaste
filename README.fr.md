@@ -55,20 +55,3 @@ Chaque backend dispose d'un fichier ``backends/<type du backend>/<nom du backend
 Le chiffrement des pastes sur les pastebin classiques est effectué par un module Javascript fourni par le pastebin. C'est pourquoi il existe un risque d'atteinte à la confidentialité des données par le serveur.
 
 En utilisant le script GreaseMonkey, vous êtes assuré que le chiffrement est effectué côté client uniquement, en confiance. Notez vependant que vous ne pouvez être sûrs à 100% que le chiffrement fonctionne, même avec un script GreaseMonkey.
-
-
-Utilisation du chiffrement
----------------------------
-
-QUIGEON Paste vous offre la possibilité de chiffrer vos _paste_ : ils seront stockés, chiffrés, sur le serveur d'ARISE.
-
-Pour utiliser ce service, vous devez disposer de l'extension __Greasemonkey__ (disponible sur [Firefox](https://addons.mozilla.org/fr/firefox/addon/greasemonkey/) et [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=fr)).
-
-Vous pouvez trouver le [script de chiffrement ici](https://paste.iiens.net/quigeonpaste_clientsideencryption.user.js). 
-* Sous Firefox, vous avez juste à suivre les instructions.
-* Sous Chrome, il faut enregistrer le fichier, puis le lancer depuis le navigateur pour afficher la fenêtre d'installation.
-
-Une fois l'extension installée, il vous suffit de cocher la case correspondante au moment où vous éditez votre _paste_. Après validation, la clé sera transmise directement dans le lien du _paste_ que vous transmettrez à votre destinataire.
-__Attention__ : votre destinataire doit également pouvoir exécuter le script __Greasemonkey__ pour déchiffrer le _paste_.
-
-
