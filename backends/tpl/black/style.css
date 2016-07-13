@@ -1,0 +1,266 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "Lucida Grande",Arial,Verdana,sans-serif;
+	background-color: #181818;
+	color: #6a99c0;
+}
+
+/*a {
+	text-decoration: none;
+}*/
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #ffffff;
+}
+
+a:link {
+	color: #ffffff;
+}
+
+a.button {
+	display: inline-block;
+	text-align: center;
+	cursor: default;
+	padding: 1px 10px 1px 10px;
+	background-color: #282828;
+	color: #6a99c0;
+	border: 1px dotted #6a99c0;
+	text-decoration: none;
+}
+
+a.button:hover {
+	background-color: #484848;
+	color: #ffffff;
+}
+
+/*
+a:visited {
+	color: #5555ee;
+}
+*/
+
+input, textarea, select {
+	padding: 2px;
+	/*border: 1px solid #8cacbb;*/
+	/*background: url("@@QUIGON_CSS@@images/inputshadow.png") repeat-x scroll center top #FFFFFF;*/
+	background-color: #282828;
+	color: #6a99c0;
+	border: 1px dotted #6a99c0;
+}
+
+input:hover {
+	background-color: #484848;
+	color: #ffffff;
+}
+
+.placeholder {
+	color: #aaa;
+	font-style: italic;
+}
+
+.messages .msg_debug, .messages .msg_error,
+.messages .msg_warn, .messages .msg_success {
+	font-size: 80%;
+	padding: 2px;
+	margin: 0;
+}
+
+.messages .msg_debug {
+	color: #000;
+	background-color: #ffc;
+}
+.messages .msg_error {
+	color: #ffffff;
+	background-color: #b62e2d;
+	/*color: #ffffff;
+	background-color: #fcc;*/
+}
+.messages .msg_warn {
+	color: #ffffff;
+	background-color: #D07D00; 
+}
+.messages .msg_info {
+	color: #ffffff;
+	background-color: #6a99c0;
+}
+.messages .msg_success {
+	color: #ffffff;
+	background-color: #006600;
+}
+
+form.auth {
+	/*background-color: #dee7ec;*/
+	background-color: #000000;
+}
+.auth_entry {
+	margin: 10px;
+}
+
+#leftsidebar {
+	float: left;
+	margin: 50px 10px 10px 0px;
+	width: 17%;
+	height: 100%;
+	border-top:    1px solid #8cacbb;
+	border-right:  1px solid #8cacbb;
+	border-bottom: 1px solid #8cacbb;
+}
+
+#lastpastesbar h4 {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#lastpastesbar .lastpastesparagraph {
+	overflow: auto;
+}
+
+.lastpaste {
+	margin: 0;
+	padding: 0;
+}
+
+.lastpaste a {
+	display: block;
+	padding: 7px 7px 5px 15px;
+}
+
+.lastpaste a:hover {
+	/*background-color: #dee7ec;*/
+	background-color: #282828;
+	/*color: #00206a;*/
+}
+
+.lastpaste .lastpasteDelay {
+	padding-left: 40px;
+	font-size: 80%;
+}
+
+.currentime {
+	margin: 2px 3px;
+	text-align: right;
+	color: #aeb7bc;
+	font-weight: bold;
+	letter-spacing: 1pt;
+}
+
+#infologgedinbar {
+	margin-top: 7px;
+	padding-bottom: 7px;
+}
+
+#infologgedinbar h4 {
+	margin: 25px 0 10px 10px;
+}
+
+.urltons {
+	margin: 0;
+	padding: 0;
+}
+
+.urltons a {
+	display: block;
+	padding: 3px 7px 2px 15px;
+}
+
+.urltons a:hover {
+	/*background-color: #dee7ec;*/
+	background-color: #282828;
+	/*color: #00206a;*/
+}
+
+#maincontent {
+	float: left;
+	margin: 18px;
+	width: 75%;
+}
+
+.coloredPaste {
+	border: 1px dashed #8cacbb;
+	background-color: #f7f9fa;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+
+.pasteerror {
+	padding: 5px 0px 5px 10px;
+	margin-top: 30px;
+	font-weight: bold;
+	/*background-color: #fcc;*/
+	color: #000000;
+	background-color: #b62e2d;
+}
+
+ol#code_content li {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: normal;
+}
+
+ol#code_content li.li2 {
+	font-weight: bold;
+}
+
+ol#code_content pre {
+	margin: 0;
+	white-space: pre-wrap;
+}
+
+#newPaste form, #newPaste textarea {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#add_form span {
+	margin: 0px 20px 0px 35px;
+}
+
+#add_form div {
+	margin: 8px 0px 0px 30px;
+}
+
+#add_form fieldset {
+	margin: 10px 20px 3px 15px;
+}
+
+#add_form .opt_desc {
+	float: left;
+	margin: 8px 22px 4px 30px;
+}
+
+/* .button {
+	background: url("@@QUIGON_CSS@@images/buttonshadow.png") repeat-x scroll center bottom #FFFFFF;
+	cursor: pointer;
+}*/
+
+.highlight {
+	color: #cc0;
+	background-color: #ffc;
+}
+
+.logo {
+	float: right;
+	font-size: 220%;
+	font-weight: bolder;
+	text-align: right;
+}
+
+.logo a {
+	color: #dee7ec !important;
+	font-variant: small-caps;
+	letter-spacing: 2pt;
+}
+
+.clearer {
+	clear: both;
+}

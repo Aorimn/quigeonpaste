@@ -1,0 +1,14 @@
+<?php
+
+if(!defined('QUIGON_ABS'))
+	die('meh.');
+
+/**
+ * Configuration options are in conf/default.conf.php. Overload them by adding
+ * your configuration directives here.
+ *
+ * For example, defining the language to french, instead of the default english:
+$conf['lang']  = 'fr';
+ */
+
+//Setup VIM: ex: ts=4 noet :
