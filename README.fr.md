@@ -48,7 +48,7 @@ Chaque type de backend vient avec un backend par défaut :
 - storage : stocke vos pastes dans des fichiers sur le système de fichiers
 - tpl : définit l'apparence de l'application
 
-Chaque backend dispose d'un fichier ``backends/<type du backend>/<nom du backend>/conf.php`` qui peut être configuré à partir de `conf/local.conf.php`.
+Chaque backend dispose d'un fichier `backends/<type du backend>/<nom du backend>/conf.php` qui peut être configuré à partir de `conf/local.conf.php`.
 
 ## Notes sur le plugin de chiffrement GreaseMonkey 
 
