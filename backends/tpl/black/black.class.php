@@ -155,13 +155,13 @@ class Tpl_black implements Tpl_basic
 	 */
 	public function displayLogin()
 	{
-		global $auth, $lang;
+		global $ID, $NS, $auth, $lang;
 
 		$fields = $auth->getFormFields();
 		if(is_null($fields))
 			return;
 
-		$url = getUrl('', $NS);
+		$url = getUrl($ID, $NS);
 		echo "<form action='$url' method='POST' class='auth'>";
 
 		foreach($fields as $field)

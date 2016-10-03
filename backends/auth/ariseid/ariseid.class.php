@@ -51,6 +51,7 @@ class Auth_ariseid extends Auth_classic
 
 		$consumer = $this->getConsumer();
 
+		$consumer->set_callback(OAuthAriseClient::getScriptURL());
 
 		if(isset($_REQUEST['auth_logout']))
 		{
