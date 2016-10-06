@@ -5,7 +5,7 @@ DirectoryIndex index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !/favicon.ico
-    RewriteRule ^(.*)$ index.php?id=$1 [L]
+    RewriteRule ^(.*)$ index.php?id=$1 [L,QSA]
 </IfModule>
 
 <IfModule !mod_rewrite.c>
