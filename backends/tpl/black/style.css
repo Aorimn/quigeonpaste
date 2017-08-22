@@ -188,7 +188,7 @@ form.auth {
 
 .coloredPaste {
 	border: 1px dashed #8cacbb;
-	background-color: #f7f9fa;
+	background-color: #000000;
 	margin-bottom: 20px;
 	padding-left: 10px;
 }
@@ -244,8 +244,8 @@ ol#code_content pre {
 }*/
 
 .highlight {
-	color: #cc0;
-	background-color: #ffc;
+	color: #ffffff;
+	background-color: #000000;
 }
 
 .logo {
