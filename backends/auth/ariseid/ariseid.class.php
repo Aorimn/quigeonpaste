@@ -156,12 +156,15 @@ class Auth_ariseid extends Auth_classic
 		if(($ret = parent::authorize($acl, $id, $ns, $context)) !== ERR_SUCCESS)
 			return $ret;
 
-		$msg->addMessage("User's associations: '"
-			. implode("', '", $this->attributes['assoces']) . "'", Msg::DEBUG);
-
 		/* Default namespace (empty namespace) is authorized */
 		if(empty($ns))
 			return ERR_SUCCESS;
+
+		if(!isset($this->attributes['assoces']))
+			return ERR_DENIED;
+
+		$msg->addMessage("User's associations: '"
+			. implode("', '", $this->attributes['assoces']) . "'", Msg::DEBUG);
 
 		/* If requested NS is in the associations of the user, it's ok */
 		if(in_array($ns, $this->attributes['assoces']))

@@ -185,14 +185,14 @@ class Storage_sqlite implements Storage_basic
 			return ERR_EXPIRED;
 		}
 
-		if($data['type'] === 0)
+		if($out_data['type'] === 0)
 			$type_name =  '';
 		else
-			$type_name = $this->get_type_name_from_id($data['type']);
+			$type_name = $this->get_type_name_from_id($out_data['type']);
 
 		$out_data['type'] = $type_name;
 		$out_data['once'] = $out_data['once'] === 1 ? true : false;
-		$out_data['ns'] = $this->get_ns_name_from_id($data['ns']);
+		$out_data['ns'] = $this->get_ns_name_from_id($out_data['ns']);
 
 		return ERR_SUCCESS;
 	}

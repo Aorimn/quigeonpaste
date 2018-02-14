@@ -82,8 +82,8 @@ function _checkID($id)
 	if(empty($id) || !is_string($id))
 		return ERR_EMPTY;
 
-	/* Check the length, it should be greater than the number of random chars */
-	if(strlen($id) <= $conf['id_length'])
+	/* Check the length, it should be greater or equals than the number of random chars */
+	if(strlen($id) < $conf['id_length'])
 		return ERR_LENGTH_MISMATCH;
 
 	/* Now check the format, it should be a 'base64 string minus /+=' */

@@ -21,7 +21,8 @@ class Storage_plain implements Storage_basic
 
 		if(substr($conf['storage_pastes'], -1) !== DIRECTORY_SEPARATOR)
 			$conf['storage_pastes'] .= '/';
-		mkdir($conf['storage_pastes'], 0700, true);
+		if(!is_dir($conf['storage_pastes']))
+			mkdir($conf['storage_pastes'], 0700, true);
 	}
 
 	/**
