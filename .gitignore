@@ -1,3 +1,4 @@
 # Local configuration
 conf/local.conf.php
+data/*
 
